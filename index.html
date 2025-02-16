@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支払い済み連絡受付サポートページ</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 既存のCSSを適用 -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 100%;
+            margin: 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+        .important {
+            color: red;
+            font-weight: bold;
+            background-color: #ffebee;
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .step {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid #0073e6;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        ul {
+            padding: 0;
+        }
+        li {
+            background: #e3f2fd;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>支払い済み連絡受付サポートページ（試作品）</h1>
+    <p>支払期日を過ぎた電気料金につきましては、お支払いをしていただいた上で、需給契約解約日の前営業日15時までに当社までご連絡をしていただく必要がございます。
+        このページでは、高圧電力をご契約のお客さま向けに、電気料金の支払い済み連絡をIVR（自動音声システム）で行う手順をご説明します。</p>
+    <p class="important">⚠ 重要：音声案内の一部はスキップできません。指示に従って操作してください。</p>
+
+    <h2>IVR操作手順</h2>
+    <div class="step"><strong>1.</strong> 専用の電話番号におかけください</div>
+    <div class="step"><strong>2.</strong> 冒頭のアナウンスを最後までお聞きください</div>
+    <div class="step"><strong>3.</strong> 「5」 を押してください</div>
+    <div class="step"><strong>4.</strong> 「1」 を押して、支払済み連絡受付システムに入ります</div>
+    <div class="step"><strong>5.</strong> 音声案内のガイダンスが続きますので、しばらくお待ちください</div>
+    
+    <h2>必要情報の入力手順</h2>
+    <div class="step"><strong>📌 ご契約者の確認</strong><br>
+        ご契約者本人の場合 → <strong>「1」</strong><br>
+        それ以外の場合 → <strong>「8」</strong>
+    </div>
+    <div class="step"><strong>📌 店所番号または事業所コードの入力（3桁 + #）</strong><br>
+        <span class="important">⚠ 領収書等で正しい番号を確認してください。</span>
+    </div>
+    <div class="step"><strong>📌 お客さま番号の入力（13桁 + #）</strong></div>
+    <div class="step"><strong>📌 支払月分の入力（2桁 + #）</strong><br>
+        <span class="important">⚠ 例：1月分なら「01」</span>
+    </div>
+    <div class="step"><strong>📌 お支払をした日付の入力（月2桁、日2桁 + #）</strong><br>
+        <span class="important">⚠ 例：3月6日なら「0306」</span>
+    </div>
+    <div class="step"><strong>📌 お支払先の選択</strong><br>
+        銀行の場合 → <strong>「1」</strong><br>
+        郵便局の場合 → <strong>「2」</strong>
+    </div>
+    <div class="step"><strong>📌 お電話番号の入力（電話番号 + #）</strong></div>
+
+    <h2>受付完了の確認</h2>
+    <p class="important">⚠ 「電気料金支払い済みのお申し込みを受付しました」の音声を最後までお聞きください。</p>
+
+    <h2>よくあるミスと対策</h2>
+    <ul>
+        <li><strong>✅ 店所番号が分からない</strong> → 領収書や請求書に表示されている3桁の番号です</li>
+        <li><strong>✅ 支払月分を間違えた</strong> → 領収書等で実際に支払った月分を確認してください</li>
+        <li><strong>✅ 申し込み完了前に電話を切った</strong> → 必ず最後まで音声を聞いてください</li>
+    </ul>
+</body>
+</html>
